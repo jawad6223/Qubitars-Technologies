@@ -1,0 +1,327 @@
+# Qubitars Tech - Project Structure Documentation
+
+## Overview
+This is a Next.js 15 project with TypeScript, featuring authentication, dashboard functionality, and a modern UI built with Tailwind CSS v4. The project uses React 19, GSAP for animations, and various icon libraries for a professional digital agency website.
+
+## Root Directory Structure
+
+```
+D:\Qubitars Tech\
+├── 📁 node_modules\           # Dependencies (auto-generated)
+├── 📁 public\                 # Static assets
+├── 📁 src\                    # Source code
+├── 📄 package.json            # Project dependencies and scripts
+├── 📄 pnpm-lock.yaml          # Package lock file
+├── 📄 next.config.ts          # Next.js configuration
+├── 📄 tailwind.config.js      # Tailwind CSS configuration
+├── 📄 tsconfig.json           # TypeScript configuration
+├── 📄 eslint.config.mjs       # ESLint configuration
+├── 📄 postcss.config.mjs      # PostCSS configuration
+├── 📄 next-env.d.ts           # Next.js TypeScript declarations
+└── 📄 README.md               # Project documentation
+```
+
+## Public Directory (`/public`)
+Contains static assets served directly by Next.js:
+
+```
+public/
+├── 🖼️ Logo.png               # Main application logo
+├── 🖼️ BG.png                 # Background image
+├── 🖼️ Card-1.png             # Card component image
+├── 🖼️ Title.png              # Title image
+├── 🖼️ file.svg               # File icon
+├── 🖼️ globe.svg              # Globe icon
+├── 🖼️ next.svg               # Next.js logo
+├── 🖼️ vercel.svg             # Vercel logo
+└── 🖼️ window.svg             # Window icon
+```
+
+## Source Directory (`/src`)
+
+### App Directory (`/src/app`)
+Next.js 13+ App Router structure:
+
+```
+src/app/
+├── 📄 layout.tsx              # Root layout component
+├── 📄 page.tsx                # Home page
+├── 📄 not-found.tsx           # 404 error page
+├── 📄 favicon.ico             # Site favicon
+│
+├── 📁 auth/                   # Authentication pages
+│   ├── 📄 layout.tsx          # Auth layout
+│   ├── 📁 login/
+│   │   └── 📄 page.tsx        # Login page
+│   ├── 📁 signup/
+│   │   └── 📄 page.tsx        # Signup page
+│   └── 📁 forget-password/
+│       └── 📄 page.tsx        # Password reset page
+│
+└── 📁 dashboard/              # Dashboard pages
+    ├── 📄 layout.tsx          # Dashboard layout
+    ├── 📁 index/
+    │   └── 📄 page.tsx        # Dashboard home
+    └── 📁 setting/
+        └── 📄 page.tsx        # Settings page
+```
+
+### Components Directory (`/src/components`)
+Reusable UI components organized by functionality:
+
+```
+src/components/
+├── 📁 layout/                 # Layout components
+│   ├── 📄 Header.tsx          # Main header component
+│   └── 📄 TopNav.tsx          # Top navigation component
+│
+├── 📁 sections/               # Page section components
+│   ├── 📄 AreaExpert.tsx      # Area expert section
+│   └── 📄 Hero.tsx            # Hero section component
+│
+└── 📁 ui/                     # Reusable UI components
+    ├── 📁 button/
+    │   └── 📄 Button.tsx      # Button component
+    └── 📁 cards/
+        └── 📄 Card.tsx        # Card component
+```
+
+### Assets Directory (`/src/assets`)
+Application assets:
+
+```
+src/assets/
+├── 
+```
+
+### Configuration & Utilities
+
+```
+src/
+├── 📁 config/                 # Configuration files (empty)
+├── 📁 context/                # React context providers (empty)
+├── 📁 hook/                   # Custom React hooks
+│   └── 📄 useErrorBoundary.ts # Error boundary hook
+├── 📁 services/               # API services (empty)
+├── 📁 styles/                 # Global styles
+│   └── 📄 globals.css         # Global CSS styles
+├── 📁 types/                  # TypeScript type definitions (empty)
+└── 📁 utils/                  # Utility functions (empty)
+```
+
+## Technology Stack
+
+### Core Technologies
+- **Framework**: Next.js 15.5.2 (App Router with Turbopack)
+- **Language**: TypeScript 5
+- **React**: React 19.1.0 & React DOM 19.1.0
+- **Styling**: Tailwind CSS v4 (Latest)
+- **Package Manager**: pnpm
+- **Build Tool**: Turbopack (Next.js built-in)
+- **Linting**: ESLint 9 with Next.js config
+
+### Key Dependencies
+- **Animation**: GSAP 3.13.0 (GreenSock Animation Platform)
+- **Icons**: 
+  - Lucide React 0.542.0 (Modern icon library)
+  - React Icons 5.5.0 (Popular icon sets)
+- **Country Flags**: 
+  - Country Flag Icons 1.5.19
+  - Flag Icons 7.5.0
+- **Styling**: Styled Components 6.1.19
+- **Fonts**: Geist & Geist Mono (Google Fonts via Next.js)
+
+### Development Tools
+- **Git Hooks**: Husky 8.0.0
+- **TypeScript Types**: @types/node, @types/react, @types/react-dom
+- **PostCSS**: @tailwindcss/postcss v4
+
+## Key Features
+
+### 1. **Authentication System**
+   - Login page (`/auth/login`)
+   - Signup page (`/auth/signup`)
+   - Password reset functionality (`/auth/forget-password`)
+   - Dedicated auth layout with custom styling
+
+### 2. **Dashboard System**
+   - Main dashboard interface (`/dashboard/index`)
+   - Settings page (`/dashboard/setting`)
+   - Protected routes with dedicated layout
+   - User management interface
+
+### 3. **UI Components Library**
+   Organized into logical categories for better maintainability:
+   
+   **Layout Components** (`/src/components/layout/`):
+   - **Header Component**: Main navigation header
+   - **TopNav Component**: Contact info with country flags and social media links
+   
+   **Section Components** (`/src/components/sections/`):
+   - **Hero Component**: Landing page hero with background images and CTA
+   - **AreaExpert Component**: Expert area display component
+   
+   **UI Components** (`/src/components/ui/`):
+   - **Button Component**: Multi-variant button with 5 styles (primary, secondary, accent, outline, ghost)
+   - **Card Component**: Reusable card layouts
+
+### 4. **Design System**
+   - **Custom Color Palette**:
+     - Primary: #3490dc (Blue)
+     - Secondary: #ff6f61 (Red)
+     - Accent: #FC7E13 (Orange)
+     - Light Gray: #f3f4f6
+     - Dark Gray: #2d2d2d
+   - **Typography**: Geist Sans & Geist Mono fonts
+   - **Responsive Design**: Mobile-first approach with Tailwind CSS
+   - **Dark Mode Support**: CSS variables for theme switching
+
+### 5. **Internationalization**
+   - Country flag support (Pakistan & US phone numbers)
+   - Multi-region contact information
+   - Flag icons for visual country representation
+
+### 6. **Error Handling**
+   - Custom error boundary hook (`useErrorBoundary`)
+   - 404 error page
+   - Error state management with React hooks
+
+### 7. **Performance Features**
+   - Turbopack for faster builds and development
+   - Next.js Image optimization
+   - Font optimization with next/font
+   - Lazy loading and code splitting
+
+## Development Commands
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server with Turbopack
+pnpm dev
+
+# Build for production with Turbopack
+pnpm build
+
+# Start production server
+pnpm start
+
+# Run ESLint
+pnpm lint
+
+# Setup Git hooks (Husky)
+pnpm prepare
+```
+
+## Project Configuration
+
+### Tailwind CSS v4 Configuration
+- **Content Sources**: `./src/**/*.{js,ts,jsx,tsx}`, `./pages/**/*.{js,ts,jsx,tsx}`, `./components/**/*.{js,ts,jsx,tsx}`
+- **Custom Colors**: Primary, Secondary, Accent, Light Gray, Dark Gray
+- **CSS Variables**: Defined in `globals.css` with dark mode support
+
+### TypeScript Configuration
+- **Target**: ES2017
+- **Module Resolution**: Bundler
+- **Path Mapping**: `@/*` maps to `./src/*`
+- **Strict Mode**: Enabled
+- **JSX**: Preserve mode for Next.js
+
+### Next.js Configuration
+- **App Router**: Enabled
+- **Turbopack**: Enabled for development and build
+- **Image Optimization**: Enabled
+- **Font Optimization**: Geist fonts loaded via next/font
+
+## File Naming Conventions
+
+- **Components**: PascalCase (e.g., `Hero.tsx`, `TopNav.tsx`)
+- **Pages**: lowercase with hyphens (e.g., `forget-password`)
+- **Utilities**: camelCase (e.g., `useErrorBoundary.ts`)
+- **Assets**: PascalCase with descriptive names (e.g., `Logo.png`, `Card-1.png`)
+
+## Component Usage Examples
+
+### Button Component
+```tsx
+<Button variant="accent" size="lg" fullWidth>
+  Book a Consultation, it's free
+</Button>
+```
+
+### TopNav Component
+- Displays contact information with country flags
+- Social media icons (LinkedIn, Facebook, X, Instagram)
+- Responsive design with hover effects
+
+### Hero Component
+- Background image integration
+- Responsive layout (mobile/desktop)
+- Call-to-action button
+- Image optimization with Next.js Image component
+
+## Project Status
+
+### ✅ Completed Features
+- ✅ Next.js 15 with App Router setup
+- ✅ TypeScript configuration with strict mode
+- ✅ Tailwind CSS v4 with custom design system
+- ✅ Authentication pages (login, signup, forget-password)
+- ✅ Dashboard structure with protected routes
+- ✅ Organized UI components library with logical folder structure
+  - ✅ Layout components (Header, TopNav)
+  - ✅ Section components (Hero, AreaExpert)
+  - ✅ UI components (Button, Card)
+- ✅ Custom error boundary hook
+- ✅ Responsive design implementation
+- ✅ Font optimization with Geist fonts
+- ✅ Image optimization setup
+- ✅ Country flag integration
+- ✅ Social media icons integration
+- ✅ Dark mode CSS variables setup
+- ✅ Improved project structure and organization
+
+### ⏳ Ready for Implementation
+- ⏳ Configuration directories (config, context, services, types, utils) are empty and ready
+- ⏳ GSAP animations not yet implemented
+- ⏳ Styled Components integration pending
+- ⏳ API services and utilities need implementation
+
+## Next Steps
+
+1. **Implement GSAP Animations**
+   - Add smooth scroll animations
+   - Implement page transitions
+   - Create interactive hover effects
+
+2. **Backend Integration**
+   - Set up API services in `/src/services`
+   - Implement authentication logic
+   - Add data fetching utilities
+
+3. **Type Safety**
+   - Add TypeScript interfaces in `/src/types`
+   - Create API response types
+   - Implement form validation types
+
+4. **State Management**
+   - Set up React Context in `/src/context`
+   - Implement global state management
+   - Add user authentication state
+
+5. **Configuration**
+   - Add environment configuration in `/src/config`
+   - Set up API endpoints configuration
+   - Configure deployment settings
+
+6. **Testing & Quality**
+   - Add unit tests for components
+   - Implement integration tests
+   - Set up E2E testing
+
+7. **Performance Optimization**
+   - Implement code splitting
+   - Add lazy loading for components
+   - Optimize bundle size
+   
