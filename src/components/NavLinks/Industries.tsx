@@ -6,7 +6,6 @@ import {
   Diameter,
   HeartPlus,
   GraduationCap,
-  MoveRight,
 } from "lucide-react";
 import { useState } from "react";
 import Button from "../ui/button/Button";
@@ -185,7 +184,7 @@ export const Industries = () => {
                   </div>
                   <div className="border-b-2 border-gray-300 pb-4">
                     <p className="text-gray-600 italic">
-                    “Qubitars is an integral part of our team and we probably wouldn't be here today without them. Some of their team has worked with us for 5-8 years and we've built a trusted business relationship. We share successes together.”
+                    “Qubitars is an integral part of our team and we probably wouldn&apos;t be here today without them. Some of their team has worked with us for 5-8 years and we&apos;ve built a trusted business relationship. We share successes together.”
                     </p>
                     <div className="flex items-center gap-3 mt-2">
                       <Image src="/images/Industries/Man.png" alt="Jake Peters" width={50} height={50} className="hover:opacity-90 transition-opacity"/>
@@ -194,8 +193,8 @@ export const Industries = () => {
                   </div>
                   <div className="flex justify-between items-center w-full">
                     <div className="flex-1">
-                      <h3 className="text-lg font-bold text-accent">Let's Build Your Next Project Together</h3>
-                      <p className="text-gray-600 text-sm">With over 1000 tech experts, we're ready to discuss your project.</p>
+                      <h3 className="text-lg font-bold text-accent">Let&apos;s Build Your Next Project Together</h3>
+                      <p className="text-gray-600 text-sm">With over 1000 tech experts, we&apos;re ready to discuss your project.</p>
                     </div>
                     <Button variant="accent" size="lg">
                       Schedule a Call
