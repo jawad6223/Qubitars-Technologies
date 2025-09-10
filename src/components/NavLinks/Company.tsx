@@ -41,7 +41,7 @@ export const Company = () => {
                         <Image src="/images/Company/Frame.png" alt="Logo Qubitars" fill className="rounded-sm object-cover" priority/>
                       </div>
                       <p className="text-gray-600 mb-4 text-base leading-relaxed hover:text-accent transition-colors duration-300">
-                      "Qubitars is an integral part of our team and we probably wouldn't be here today without them, Some of their team has worked with us for 5-8 years and we've built a trusted business relationship."
+                      &apos;Qubitars is an integral part of our team and we probably wouldn&apos;t be here today without them, Some of their team has worked with us for 5-8 years and we&apos;ve built a trusted business relationship.&apos;
                       </p>
                       <div className="flex items-center gap-3 mt-3">
                         <Image src="/images/Company/Jake.png" alt="Logo PayPerks" width={60} height={30} className="rounded-sm hover:opacity-90 transition-opacity"/>
@@ -83,7 +83,7 @@ export const Company = () => {
                         <Image src="/images/Company/Frame.png" alt="Logo Qubitars" fill className="rounded-sm object-cover" priority/>
                       </div>
                       <p className="text-gray-600 mb-4 text-base leading-relaxed hover:text-accent transition-colors duration-300">
-                      "Qubitars is an integral part of our team and we probably wouldn't be here today without them, Some of their team has worked with us for 5-8 years and we've built a trusted business relationship."
+                      &apos;Qubitars is an integral part of our team and we probably wouldn&apos;t be here today without them, Some of their team has worked with us for 5-8 years and we&apos;ve built a trusted business relationship.&apos;
                       </p>
                       <div className="flex items-center gap-3 mt-3">
                         <Image src="/images/Company/Jake.png" alt="Logo PayPerks" width={60} height={30} className="rounded-sm hover:opacity-90 transition-opacity"/>
@@ -125,7 +125,7 @@ export const Company = () => {
                         <Image src="/images/Company/Frame.png" alt="Logo Qubitars" fill className="rounded-sm object-cover" priority/>
                       </div>
                       <p className="text-gray-600 mb-4 text-base leading-relaxed hover:text-accent transition-colors duration-300">
-                      "Qubitars is an integral part of our team and we probably wouldn't be here today without them, Some of their team has worked with us for 5-8 years and we've built a trusted business relationship."
+                      &apos;Qubitars is an integral part of our team and we probably wouldn&apos;t be here today without them, Some of their team has worked with us for 5-8 years and we&apos;ve built a trusted business relationship.&apos;
                       </p>
                       <div className="flex items-center gap-3 mt-3">
                         <Image src="/images/Company/Jake.png" alt="Logo PayPerks" width={60} height={30} className="rounded-sm hover:opacity-90 transition-opacity"/>

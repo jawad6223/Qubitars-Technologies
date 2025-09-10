@@ -4,7 +4,7 @@ interface FacebookProps {
   height?: number
   stroke?: string
 }
-const facebook = ({ width = 24, height = 24, stroke = '#1A1A1A' }: FacebookProps) => {
+const facebook = ({ width = 24, height = 24, }: FacebookProps) => {
   return (
     <svg
       width={width}

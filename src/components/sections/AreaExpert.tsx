@@ -1,32 +1,32 @@
 import React from 'react'
 import Card from '../ui/cards/Card'
 const AreaExpert = () => {
-    const expert = [
-        {
-            name: 'Product Design',
-            description: 'We craft intuitive, user-first digital experiences that look stunning and function flawlessly—turning complex ideas into designs users love.'
-        },
-        {
-            name: 'Custom Software',
-            description: 'Tailor-made software that adapts to your business—not the other way around. Built to scale, secure by design, and optimized for performance.'
-        },
-        {
-            name: 'AI/ML Development',
-            description: 'From predictive analytics to intelligent bots, we turn complex data into scalable AI solutions that give your business a cutting edge.'
-        },
-        {
-            name: 'MVP Development',
-            description: 'Launch faster, smarter. We build lean, scalable MVPs that validate your idea, attract users, and prepare you for full product rollout.'
-        },
-        {
-            name: 'Mobile App Dev',
-            description: 'From iOS to Android, we build high-performance apps with sleek design and powerful backend—giving users seamless experiences on the go.'
-        },
-        {
-            name: 'Staff Augmentation',
-            description: 'Scale your team with vetted developers, designers, and AI experts—ready to plug in, deliver results, and adapt to your workflow.'
-        }
-    ]
+    // const expert = [
+    //     {
+    //         name: 'Product Design',
+    //         description: 'We craft intuitive, user-first digital experiences that look stunning and function flawlessly—turning complex ideas into designs users love.'
+    //     },
+    //     {
+    //         name: 'Custom Software',
+    //         description: 'Tailor-made software that adapts to your business—not the other way around. Built to scale, secure by design, and optimized for performance.'
+    //     },
+    //     {
+    //         name: 'AI/ML Development',
+    //         description: 'From predictive analytics to intelligent bots, we turn complex data into scalable AI solutions that give your business a cutting edge.'
+    //     },
+    //     {
+    //         name: 'MVP Development',
+    //         description: 'Launch faster, smarter. We build lean, scalable MVPs that validate your idea, attract users, and prepare you for full product rollout.'
+    //     },
+    //     {
+    //         name: 'Mobile App Dev',
+    //         description: 'From iOS to Android, we build high-performance apps with sleek design and powerful backend—giving users seamless experiences on the go.'
+    //     },
+    //     {
+    //         name: 'Staff Augmentation',
+    //         description: 'Scale your team with vetted developers, designers, and AI experts—ready to plug in, deliver results, and adapt to your workflow.'
+    //     }
+    // ]
   return (
     <main>
         <div className='flex flex-col items-center justify-center lg:px-18'>

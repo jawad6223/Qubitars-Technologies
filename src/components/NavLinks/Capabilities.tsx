@@ -138,7 +138,7 @@ export const Capabilities = () => {
                 </li>
                 <li className="flex items-center gap-3 text-gray-600 hover:translate-x-2 transition-all duration-300 cursor-pointer group/item">
                   <div className="bg-blue-50 p-1.5 rounded-lg group-hover/item:bg-blue-100 transition-colors duration-300">
-                    <img
+                    <Image
                       src="/images/Capabilities/Programming Hold.png"
                       alt="AI"
                       width={22}
